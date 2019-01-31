@@ -31,10 +31,10 @@ if ((gwmi win32_computersystem).partofdomain -eq $false) {
     -SafeModeAdministratorPassword $SecurePassword `
     -CreateDnsDelegation:$false `
     -DatabasePath "C:\Windows\NTDS" `
-    -DomainMode "Win2012" `
+    -DomainMode "WinThreshold" `
     -DomainName "windomain.local" `
     -DomainNetbiosName "WINDOMAIN" `
-    -ForestMode "Win2012" `
+    -ForestMode "WinThreshold" `
     -InstallDns:$true `
     -LogPath "C:\Windows\NTDS" `
     -NoRebootOnCompletion:$true `

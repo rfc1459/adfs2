@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.define "dc" do |cfg|
-    cfg.vm.box = "windows_2012_r2"
+    cfg.vm.box = "StefanScherer/windows_2016"
     cfg.vm.hostname = "dc"
 
     # use the plaintext WinRM transport and force it to use basic authentication.
@@ -42,7 +42,7 @@ Vagrant.configure("2") do |config|
 
 
   config.vm.define "adfs2", autostart: false do |cfg|
-    cfg.vm.box = "windows_2012_r2"
+    cfg.vm.box = "StefanScherer/windows_2016"
     cfg.vm.hostname = "adfs2"
 
     cfg.vm.communicator = "winrm"
@@ -68,7 +68,7 @@ Vagrant.configure("2") do |config|
 
 
   config.vm.define "web", autostart: false do |cfg|
-    cfg.vm.box = "windows_2012_r2"
+    cfg.vm.box = "StefanScherer/windows_2016"
     cfg.vm.hostname = "web"
 
     cfg.vm.communicator = "winrm"
@@ -98,7 +98,7 @@ Vagrant.configure("2") do |config|
 
 
   config.vm.define "ps", autostart: false do |cfg|
-    cfg.vm.box = "windows_2012_r2"
+    cfg.vm.box = "StefanScherer/windows_2016"
     cfg.vm.hostname = "ps"
 
     cfg.vm.communicator = "winrm"
@@ -124,7 +124,7 @@ Vagrant.configure("2") do |config|
 
 
   config.vm.define "ts", autostart: false do |cfg|
-    cfg.vm.box = "windows_2012_r2"
+    cfg.vm.box = "StefanScherer/windows_2016"
     cfg.vm.hostname = "ts"
 
     cfg.vm.communicator = "winrm"
